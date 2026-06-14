@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odoo Cafe - Menu</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+
+    <div class="brand">
+      ☕ <span id="cafeName">Odoo Cafe</span>
+    </div>
+
+    <div style="display:flex; gap:10px; align-items:center;">
+
+      <!-- 📦 ORDERS BUTTON (IMPORTANT FIX YOU WERE MISSING) -->
+      <button id="openOrders" class="orders-btn">
+        📦 Orders
+      </button>
+
+      <!-- 🛒 CART BUTTON -->
+      <div class="cart-icon" id="openCart">
+        🛒 <span id="cartCount">0</span>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ================= SEARCH ================= -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search food, drinks, snacks... 🍕☕">
+  </section>
+
+  <!-- ================= MENU ================= -->
+  <main id="menuContainer" class="menu-container">
+    <!-- JS will inject menu items here -->
+  </main>
+
+  <!-- ================= CART MODAL ================= -->
+  <div id="cartPanel" class="modal hidden">
+
+    <div class="modal-box">
+
+      <div class="modal-header">
+        <h2>🛒 Your Cart</h2>
+        <button id="closeCart">✖</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <h3 id="cartTotal">Total: ₹0</h3>
+      </div>
+
+      <div class="cart-actions">
+        <button id="clearCart" class="btn danger">Clear</button>
+        <button id="placeOrder" class="btn primary">Place Order</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= ORDER TRACKING MODAL ================= -->
+  <div id="orderTrackPanel" class="modal hidden">
+
+    <div class="modal-box">
+
+      <div class="modal-header">
+        <h2>📦 Order Tracking</h2>
+        <button id="closeTrack">✖</button>
+      </div>
+
+      <!-- LIVE CONTENT OR ORDER LIST -->
+      <div id="trackContent" class="track-content">
+        <p>Loading orders...</p>
+      </div>
+
+      <div class="track-steps">
+        <div>🕒 Pending</div>
+        <div>👨‍🍳 Preparing</div>
+        <div>🍽 Ready</div>
+        <div>✅ Delivered</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT ================= -->
+  <script type="module" src="menu.js"></script>
+
+</body>
+
+</html>

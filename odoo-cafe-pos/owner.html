@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Owner Dashboard</title>
+  <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+<h1>👑 Owner Dashboard</h1>
+
+<div class="tabs">
+  <button onclick="showTab('orders')">Orders</button>
+  <button onclick="showTab('menu')">Menu</button>
+  <button onclick="showTab('staff')">Staff</button>
+</div>
+
+<!-- ORDERS -->
+<div id="orders" class="tab active">
+  <h2>📦 Live Orders</h2>
+  <div id="ordersContainer"></div>
+</div>
+
+<!-- MENU -->
+<div id="menu" class="tab">
+  <h2>🍔 Menu Management</h2>
+
+  <input id="itemName" placeholder="Item name">
+  <input id="itemPrice" placeholder="Price">
+  <input id="itemCategory" placeholder="Category">
+
+  <button id="addItemBtn">Add Item</button>
+
+  <div id="menuList"></div>
+</div>
+
+<!-- STAFF -->
+<div id="staff" class="tab">
+  <h2>👥 Add Staff</h2>
+
+  <input id="staffEmail" placeholder="Staff email">
+  <select id="staffRole">
+    <option value="staff">Staff</option>
+    <option value="manager">Manager</option>
+  </select>
+
+  <button id="addStaffBtn">Add Staff</button>
+
+  <div id="staffList"></div>
+</div>
+
+<script type="module" src="owner.js"></script>
+
+</body>
+</html>

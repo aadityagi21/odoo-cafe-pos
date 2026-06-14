@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+
+.tabs button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab {
+  display: none;
+  margin-top: 20px;
+}
+
+.tab.active {
+  display: block;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px;
+}
+.order-card {
+  background: #1e1e1e;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.order-card .btns button {
+  margin: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0f172a, #05070c);
+    color: white;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    color: #ff7a18;
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+.header p {
+    color: #a0a0a0;
+}
+
+.search-box {
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-size: 15px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ff7a18;
+}
+
+.cafes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 20px;
+}
+
+.cafe-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.cafe-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff7a18;
+}
+
+.cafe-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.cafe-info {
+    color: #bdbdbd;
+    margin-bottom: 8px;
+}
+
+.status {
+    color: #00ff99;
+    margin-bottom: 18px;
+}
+
+.enter-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(135deg,#ff7a18,#ff512f);
+    color: white;
+    transition: 0.3s;
+}
+
+.enter-btn:hover {
+    opacity: 0.9;
+}
+
+#message {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ff99;
+    font-weight: bold;
+}

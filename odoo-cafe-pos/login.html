@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Odoo Cafe</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+  <div class="login-card">
+
+    <h1>☕ Odoo Cafe</h1>
+    <p class="subtitle">Smart Cafe Management System</p>
+
+    <!-- TAB SWITCH -->
+    <div class="tabs">
+      <button id="loginTab" class="active">Login</button>
+      <button id="signupTab">Create Account</button>
+    </div>
+
+    <!-- FORM -->
+    <form id="authForm">
+
+      <input type="email" id="email" placeholder="Email" required>
+
+      <!-- PASSWORD WITH EYE -->
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Password" required>
+        <span id="eye">👁️</span>
+      </div>
+
+      <!-- CONFIRM PASSWORD (ONLY FOR SIGNUP) -->
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" style="display:none;">
+
+      <button type="submit" id="submitBtn">Login</button>
+
+    </form>
+
+    <!-- MESSAGE -->
+    <p id="message"></p>
+
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
